@@ -1,64 +1,157 @@
-const menuGrid = document.querySelector(".menu-grid");
+//Search filter
+
+const searchInput = document.querySelector(".search-container input");
+searchInput.addEventListener("input", () => {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    const filteredItems = itemList.filter(item => {
+        return item.name.toLowerCase().includes(searchText);
+    });
+
+    displayItems(filteredItems);
+
+});
 
 
-function displayMenu(items) {
+// Categories filter
 
-    menuGrid.innerHTML = "";
+const categories = document.querySelectorAll(".category");
 
-    for (const item of items) {
 
-        const card = document.createElement("div");
-        card.classList.add("menu-card");
+// Menu items
 
-        const img = document.createElement("img");
-        img.src = item.image;
-        img.alt = item.name;
-        card.appendChild(img);
+const foodList = document.querySelector(".food-list");
 
-        const menuInfo = document.createElement("div");
-        menuInfo.classList.add("menu-info");
+function displayItems(items) {
 
-        const title = document.createElement("h3");
-        title.textContent = item.name;
-        menuInfo.appendChild(title);
+    foodList.innerHTML = "";
+
+    items.forEach(item => {
+
+        const foodCard = document.createElement("article");
+        foodCard.classList.add("food-card");
+
+
+        // Image
+
+        const foodImage = document.createElement("img");
+
+        foodImage.classList.add("food-image");
+
+        foodImage.setAttribute("src", item.image);
+        foodImage.setAttribute("alt", item.name);
+
+        foodCard.appendChild(foodImage);
+
+
+        // Food info
+
+        const foodInfo = document.createElement("div");
+
+        foodInfo.classList.add("food-info");
+
+        foodCard.appendChild(foodInfo);
+
+
+        // Title row
+
+        const foodTitleRow = document.createElement("div");
+
+        foodTitleRow.classList.add("food-title-row");
+
+        foodInfo.appendChild(foodTitleRow);
+
+
+        // Food title
+
+        const foodTitle = document.createElement("h2");
+
+        foodTitle.textContent = item.name;
+
+        foodTitleRow.appendChild(foodTitle);
+
+
+        // Rating
+
+        const rating = document.createElement("span");
+
+        rating.classList.add("rating");
+
+        rating.textContent = "5.0";
+
+        foodTitleRow.appendChild(rating);
+
+
+        // Star
+
+        const star = document.createElement("i");
+
+        star.classList.add("fa-solid");
+        star.classList.add("fa-star");
+
+        rating.appendChild(star);
+
+
+        // Price
+
+        const price = document.createElement("div");
+
+        price.classList.add("price");
+
+        price.textContent = `₦${item.price.toLocaleString()}`;
+
+        foodInfo.appendChild(price);
+
+
+        // Description
 
         const description = document.createElement("p");
+
+        description.classList.add("description");
+
         description.textContent = item.description;
-        menuInfo.appendChild(description);
 
-        const price = document.createElement("p");
-        price.textContent = `₦${item.price.toLocaleString()}`;
-        price.classList.add("price");
-        menuInfo.appendChild(price);
+        foodInfo.appendChild(description);
 
-        const button = document.createElement("button");
-        button.classList.add("add-cart");
-        button.textContent = "Add to cart";
-        menuInfo.appendChild(button);
 
-        card.appendChild(menuInfo);
+        // Add completed card to the page
 
-        menuGrid.appendChild(card);
-    }
+        foodList.appendChild(foodCard);
+
+    });
 }
 
 
 // Display all items when page loads
-displayMenu(menuItems);
+
+displayItems(itemList);
 
 
-// Search input
-const searchInput = document.getElementById("search");
+// Category click
 
-searchInput.addEventListener("input", function () {
+categories.forEach(category => {
 
-    const searchValue = searchInput.value.toLowerCase();
+    category.addEventListener("click", () => {
 
-    const filteredMenu = menuItems.filter(function (item) {
+        // Remove active from all categories
+        categories.forEach(categoryItem => {
+            categoryItem.classList.remove("active");
+        });
 
-        return item.name.toLowerCase().includes(searchValue);
+        // Add active to the category we clicked
+        category.classList.add("active");
+
+        const categoryName = category.querySelector("span").textContent;
+
+        const selectedCategory = categoryName.toLowerCase();
+
+        const filteredItems = itemList.filter(item => {
+            return item.category.includes(selectedCategory);
+        });
+
+        displayItems(filteredItems);
 
     });
 
-    displayMenu(filteredMenu);
 });

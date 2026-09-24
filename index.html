@@ -3,51 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+
+    <title>Food App</title>
+
     <link rel="stylesheet" href="menu.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="menu-container">
+    <div class="app-container">
 
-        <header class="menu-header">
+        <!-- ================= HEADER ================= -->
+        <header class="top-header">
 
-    <div class="main-header">
-        <img src="images/kitchenLogo.jpeg" alt="Kitchen logo">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button class="filter-btn">
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
+            </div>
 
-        <div class="header-text">
-            <h1 id="header-info">MENU</h1>
-            <p id="menu-info">Choose your favorite meal</p>
-        </div>
-    </div>
+            <div class="header-icons">
+                <button>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
 
-    <div class="search-box">
-        <input type="text" id="search" placeholder="Search menu...">
-        <button id="search-btn">Search</button>
-    </div>
+                <button>
+                    <i class="fa-regular fa-bell"></i>
+                </button>
 
-</header>
+                <button>
+                    <i class="fa-regular fa-user"></i>
+                </button>
+            </div>
+
+        </header>
 
 
-        <main class="menu-content">
-            <section class="menu-section">
-                <h2>Food</h2>
+        <!-- ================= CATEGORIES ================= -->
+        <section class="categories">
 
-                <div class="menu-grid">
-                    
-                    
+            <div class="category active">
+                <div class="category-icon">
+                    <i class="fa-solid fa-bowl-food"></i>
                 </div>
-                    
+                <span>Snacks</span>
+            </div>
 
+            <div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-utensils"></i>
                 </div>
-            </section>
+                <span>Meal</span>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-tree"></i>
+                </div>
+                <span>Vegan</span>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <span>Dessert</span>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-wine-glass"></i>
+                </div>
+                <span>Drinks</span>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">
+                    <i class="fa-solid fa-cheese"></i>
+                </div>
+                <span>Toppings</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SORT ================= -->
+        <section class="sort-section">
+
+            <div class="sort-text">
+                <span>Sort By</span>
+                <span class="popular">Popular</span>
+            </div>
+
+            <button class="sort-btn">
+                <i class="fa-solid fa-sliders"></i>
+            </button>
+
+        </section>
+
+
+        <!-- ================= FOOD LIST ================= -->
+        <main class="food-list">
+
+            
         </main>
 
+
+        <!-- ================= BOTTOM NAVIGATION ================= -->
+        <nav class="bottom-nav">
+
+            <button class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-bowl-food"></i>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-clipboard"></i>
+            </button>
+
+            <button class="nav-item">
+                <i class="fa-solid fa-headphones"></i>
+            </button>
+
+        </nav>
+
     </div>
-
-    <script src="data.js"></script>
-    <script src="menu.js"></script>
-
+<script src="data.js"></script>
+<script src="menu.js"></script>
 </body>
 </html>
