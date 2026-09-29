@@ -1,3 +1,7 @@
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +15,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    APP CONTAINER
-========================= */
+========================================================= */
 
 .app-container {
     width: 100%;
@@ -29,9 +33,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    TOP HEADER
-========================= */
+========================================================= */
 
 .top-header {
     background: #FEF3C6;
@@ -48,12 +52,12 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    SEARCH
-========================= */
+========================================================= */
 
 .search-container {
-    height: 42px;
+    height: 39px;
 
     background: #fff;
 
@@ -79,7 +83,8 @@ body {
     font-size: 15px;
 
     color: #555;
-     cursor: text;
+
+    cursor: text;
 }
 
 
@@ -102,8 +107,9 @@ body {
 
     cursor: pointer;
 
-    transition: background 0.2s ease,
-                transform 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 .filter-btn:hover {
@@ -113,9 +119,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    HEADER ICONS
-========================= */
+========================================================= */
 
 .header-icons {
     display: flex;
@@ -139,9 +145,10 @@ body {
 
     cursor: pointer;
 
-    transition: background 0.2s ease,
-                transform 0.2s ease,
-                color 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        color 0.2s ease;
 }
 
 .header-icons button:hover {
@@ -153,14 +160,14 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    CATEGORIES
-========================= */
+========================================================= */
 
 .categories {
     background: #FCE99C;
 
-    height: 150px;
+    height: 130px;
 
     padding: 20px 10px 0;
 
@@ -221,8 +228,9 @@ body {
 
     font-size: 27px;
 
-    transition: background 0.2s ease,
-                transform 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 
@@ -269,9 +277,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    SORT
-========================= */
+========================================================= */
 
 .sort-section {
     padding: 35px 24px 18px;
@@ -314,8 +322,9 @@ body {
 
     cursor: pointer;
 
-    transition: background 0.2s ease,
-                transform 0.2s ease;
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 .sort-btn:hover {
@@ -325,18 +334,94 @@ body {
 }
 
 
-/* =========================
+/* SORT CONTAINER */
+
+.sort-container {
+    position: relative;
+}
+
+
+/* SORT MENU */
+
+.sort-menu {
+    position: absolute;
+
+    top: 50px;
+    right: 0;
+
+    width: 160px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    padding: 8px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    display: none;
+
+    z-index: 20;
+}
+
+.sort-menu.show {
+    display: block;
+}
+
+
+/* SORT OPTION */
+
+.sort-option {
+    width: 100%;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #555;
+
+    text-align: left;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.sort-option:hover {
+    background: #FFF4C7;
+
+    color: #F7941D;
+}
+
+.sort-option.active {
+    background: #FEF3C6;
+
+    color: #F7941D;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
    FOOD LIST
-========================= */
+========================================================= */
 
 .food-list {
     padding: 0 24px;
 }
 
 
-/* =========================
+/* =========================================================
    FOOD CARD
-========================= */
+========================================================= */
 
 .food-card {
     padding-bottom: 18px;
@@ -347,9 +432,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    FOOD IMAGE
-========================= */
+========================================================= */
 
 .food-image {
     width: 100%;
@@ -364,9 +449,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    FOOD INFO
-========================= */
+========================================================= */
 
 .food-info {
     padding-top: 9px;
@@ -399,9 +484,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    RATING
-========================= */
+========================================================= */
 
 .rating {
     background: #f7941d;
@@ -422,9 +507,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    PRICE
-========================= */
+========================================================= */
 
 .price {
     font-size: 19px;
@@ -435,9 +520,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    DESCRIPTION
-========================= */
+========================================================= */
 
 .description {
     margin-top: 5px;
@@ -450,9 +535,9 @@ body {
 }
 
 
-/* =========================
+/* =========================================================
    BOTTOM NAVIGATION
-========================= */
+========================================================= */
 
 .bottom-nav {
     position: fixed;
@@ -499,9 +584,10 @@ body {
 
     cursor: pointer;
 
-    transition: color 0.2s ease,
-                background 0.2s ease,
-                transform 0.2s ease;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 .nav-item:hover {
@@ -531,52 +617,86 @@ body {
 }
 
 
-/* =========================
-   SMALL SCREEN
-========================= */
+/* =========================================================
+   SMALL SCREEN / MOBILE
+========================================================= */
 
-@media (max-width: 390px) {
+@media (max-width: 599px) {
 
     .top-header {
-        padding-left: 22px;
-        padding-right: 22px;
+        padding: 25px 16px 22px;
+
+        gap: 6px;
     }
 
-    .header-icons {
-        gap: 7px;
+    .search-container {
+        height: 40px;
     }
 
-    .header-icons button {
+    .search-container input {
+        padding: 0 14px;
+
+        font-size: 13px;
+    }
+
+    .filter-btn {
+        width: 40px;
+        height: 40px;
+
         font-size: 15px;
     }
 
-    .categories {
-        height: 145px;
-
-        padding-top: 15px;
+    .header-icons {
+        gap: 5px;
     }
 
-   .category {
-    width: 48px;
-}
+    .header-icons button {
+        width: 34px;
+        height: 34px;
 
-.category-icon {
-    width: 45px;
-    height: 45px;
+        font-size: 15px;
+    }
 
-    font-size: 17px;
 
-    margin-bottom: 8px;
-}
+    /* CATEGORIES */
 
-.category span {
-    font-size: 10px;
-}
+    .categories {
+        height: 115px;
 
-.category.active::before {
-    width: 50px;
-    height: 108px;
-}
+        padding: 10px 5px 0;
+
+        margin-top: -18px;
+
+        border-radius: 32px;
+    }
+
+    .category {
+        width: 48px;
+    }
+
+    .category-icon {
+        width: 45px;
+        height: 45px;
+
+        margin-bottom: 5px;
+
+        font-size: 17px;
+    }
+
+    .category span {
+        font-size: 10px;
+    }
+
+    .category.active::before {
+        width: 52px;
+        height: 96px;
+
+        top: -8px;
+    }
+
+
+    /* FOOD */
+
     .food-image {
         height: 170px;
 
@@ -603,20 +723,21 @@ body {
 }
 
 
-
-/* =========================
+/* =========================================================
    TABLET / IPAD
-========================= */
+========================================================= */
 
 @media (min-width: 600px) and (max-width: 1023px) {
 
     .app-container {
         max-width: 900px;
+
         margin: 0 auto;
     }
 
     .top-header {
         padding: 38px 35px 42px;
+
         gap: 16px;
     }
 
@@ -627,6 +748,7 @@ body {
     .filter-btn {
         width: 46px;
         height: 46px;
+
         font-size: 17px;
     }
 
@@ -637,12 +759,15 @@ body {
     .header-icons button {
         width: 40px;
         height: 40px;
+
         font-size: 17px;
     }
 
     .categories {
         height: 155px;
+
         padding: 20px 30px 0;
+
         margin-top: -25px;
     }
 
@@ -653,6 +778,7 @@ body {
     .category-icon {
         width: 62px;
         height: 62px;
+
         font-size: 24px;
     }
 
@@ -669,11 +795,17 @@ body {
         padding: 30px 35px 22px;
     }
 
+
     /* TWO FOOD CARDS PER ROW */
+
     .food-list {
         padding: 0 35px;
+
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
         gap: 25px;
     }
 
@@ -683,6 +815,7 @@ body {
 
     .food-image {
         height: 230px;
+
         border-radius: 30px;
     }
 
@@ -692,6 +825,7 @@ body {
 
     .rating {
         font-size: 10px;
+
         padding: 4px 6px;
     }
 
@@ -705,14 +839,18 @@ body {
 
     .bottom-nav {
         max-width: 900px;
+
         height: 65px;
+
         padding: 0 50px;
+
         border-radius: 32px 32px 0 0;
     }
 
     .nav-item {
         width: 40px;
         height: 40px;
+
         font-size: 21px;
     }
 
@@ -722,9 +860,10 @@ body {
     }
 }
 
-/* =========================
+
+/* =========================================================
    PC / DESKTOP
-========================= */
+========================================================= */
 
 @media (min-width: 1024px) {
 
@@ -737,9 +876,7 @@ body {
     }
 
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* HEADER */
 
     .top-header {
         padding: 40px 60px 50px;
@@ -774,9 +911,7 @@ body {
     }
 
 
-    /* =========================
-       CATEGORIES
-    ========================= */
+    /* CATEGORIES */
 
     .categories {
         height: 170px;
@@ -802,41 +937,34 @@ body {
     }
 
 
-    /* =========================
-       SORT
-    ========================= */
+    /* SORT */
 
     .sort-section {
         padding: 35px 60px 25px;
     }
 
 
-    /* =========================
-       FOOD LIST
-    ========================= */
+    /* FOOD LIST */
 
     .food-list {
         padding: 0 60px;
 
         display: grid;
 
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns:
+            repeat(4, 1fr);
 
         gap: 25px;
     }
 
 
-    /* =========================
-       FOOD CARD
-    ========================= */
+    /* FOOD CARD */
 
     .food-card {
         margin-bottom: 0;
     }
 
     .food-image {
-        width: 100%;
-
         height: 220px;
 
         border-radius: 30px;
@@ -861,9 +989,7 @@ body {
     }
 
 
-    /* =========================
-       BOTTOM NAV
-    ========================= */
+    /* BOTTOM NAV */
 
     .bottom-nav {
         position: fixed;
@@ -874,6 +1000,7 @@ body {
         transform: translateX(-50%);
 
         width: 100%;
+
         max-width: 1200px;
 
         height: 70px;
@@ -907,3 +1034,540 @@ body {
 }
 
 
+/* =========================================================
+   FOOD DETAILS
+========================================================= */
+
+.food-details {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: #FEF3C6;
+
+    z-index: 100;
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   DETAILS BACK BUTTON
+========================= */
+
+.details-back {
+    width: 36px;
+    height: 36px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #fff4c7;
+
+    color: #f7941d;
+
+    font-size: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* HOVER */
+
+.details-back:hover {
+    background: #f7941d;
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+
+/* CLICK */
+
+.details-back:active {
+    transform: scale(0.95);
+}
+
+/* CLICK */
+
+.details-back:active {
+    transform: scale(0.95);
+}
+
+
+/* =========================================================
+   DETAILS HEADER
+========================================================= */
+
+.details-header {
+    display: flex;
+
+    align-items: center;
+
+    padding: 35px 24px 20px;
+
+    gap: 10px;
+}
+
+.details-back,
+.details-favorite {
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #FFF4C7;
+
+    color: #EF9142;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.details-title {
+    flex: 1;
+}
+
+.details-title h1 {
+    font-size: 24px;
+
+    color: #422323;
+
+    margin-bottom: 5px;
+}
+
+.details-rating {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    background: #F7941D;
+
+    color: white;
+
+    padding: 4px 8px;
+
+    border-radius: 12px;
+
+    font-size: 12px;
+}
+
+.details-rating i {
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   DETAILS CONTENT
+========================================================= */
+
+.details-content {
+    background: #ffffff;
+
+    min-height: calc(100vh - 110px);
+
+    padding: 50px 24px 100px;
+
+    border-radius: 40px 40px 0 0;
+}
+
+
+/* =========================================================
+   DETAILS IMAGE
+========================================================= */
+
+.details-image {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 38px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   PRICE + QUANTITY
+========================================================= */
+
+.details-price-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #f2d8d0;
+}
+
+.details-price {
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #f1d875;
+}
+
+
+/* QUANTITY */
+
+.quantity-control {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.quantity-control button {
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #FEF3C6;
+
+    color: #F7941D;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.quantity-value {
+    font-size: 20px;
+
+    color: #422323;
+}
+
+
+/* =========================================================
+   DETAILS DESCRIPTION
+========================================================= */
+
+.details-description {
+    padding-top: 25px;
+}
+
+.details-description h2 {
+    font-size: 22px;
+
+    color: #422323;
+
+    margin-bottom: 8px;
+}
+
+.details-short-description {
+    font-size: 16px;
+
+    color: #555;
+
+    margin-bottom: 8px;
+}
+
+.details-long-description {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   TOPPINGS
+========================================================= */
+
+.details-toppings {
+    margin-top: 35px;
+}
+
+.details-toppings h2 {
+    font-size: 22px;
+
+    color: #422323;
+
+    margin-bottom: 15px;
+}
+
+.toppings-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* TOPPING ROW */
+
+.topping-item {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* TOPPING NAME */
+
+.topping-name {
+    white-space: nowrap;
+}
+
+
+/* DOTTED LINE */
+
+.topping-dots {
+    flex: 1;
+
+    border-bottom: 2px dotted #f2d8d0;
+
+    margin-top: 4px;
+}
+
+
+/* TOPPING PRICE */
+
+.topping-price {
+    color: #777;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* TOPPING BUTTON */
+
+.topping-add {
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: 2px solid #f8e9a6;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* INNER CIRCLE */
+
+.topping-add::after {
+    content: "";
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #fce99c;
+}
+
+
+/* HOVER */
+
+.topping-add:hover {
+    border-color: #f7941d;
+
+    transform: scale(1.08);
+}
+
+
+/* SELECTED */
+
+.topping-item.selected .topping-add {
+    border-color: #f7941d;
+}
+
+.topping-item.selected .topping-add::after {
+    background: #f7941d;
+}
+
+.topping-item.selected .topping-name {
+    color: #422323;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   ADD TO CART
+========================================================= */
+
+.add-to-cart-btn {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 230px;
+
+    height: 55px;
+
+    margin: 35px auto 0;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #FCE99C;
+
+    color: #422323;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    background: #f7941d;
+
+    color: white;
+
+    transform: scale(1.03);
+}
+
+.toppings-header {
+    text-align: center;
+}
+
+
+/* =========================================================
+   DESKTOP FOOD DETAILS
+========================================================= */
+
+@media (min-width: 1024px) {
+
+    /* DETAILS HEADER */
+
+    .details-header {
+        max-width: 1200px;
+
+        margin: 0 auto;
+
+        padding: 35px 60px 20px;
+    }
+
+
+    /* DETAILS CONTENT */
+
+    .details-content {
+        width: 100%;
+
+        max-width: 1050px;
+
+        margin: 0 auto;
+
+        padding: 50px 80px 120px;
+
+        border-radius: 45px 45px 0 0;
+    }
+    
+
+
+    /* DESKTOP IMAGE */
+
+    .details-image {
+        width: 75%;
+
+        height: 450px;
+
+        margin: 0 auto 35px;
+
+        display: block;
+
+        object-fit: cover;
+
+        border-radius: 40px;
+    }
+
+
+    /* DESKTOP PRICE */
+
+    .details-price {
+        font-size: 34px;
+    }
+
+
+    /* DESKTOP DESCRIPTION */
+
+    .details-description h2 {
+        font-size: 26px;
+    }
+
+    .details-short-description {
+        font-size: 17px;
+    }
+
+    .details-long-description {
+        font-size: 16px;
+    }
+
+
+    /* DESKTOP TOPPINGS */
+
+    .details-toppings h2 {
+        font-size: 25px;
+    }
+}

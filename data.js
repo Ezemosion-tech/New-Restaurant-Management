@@ -344,6 +344,66 @@ const itemList = [
         description: "Warm chocolate drink with a rich and comforting flavor.",
         image: "images/hotChocolate.png",
         category: ["drinks"]
-    }
+    },
 
+
+//======================
+//Toppings
+//======================
+
+{
+    name: "Guacamole",
+    price: 500,
+    description: "Freshly mashed avocado mixed with lime, herbs and spices.",
+    image: "images/guacamole.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Jalapeños",
+    price: 300,
+    description: "Fresh sliced jalapeños adding a spicy kick to your meal.",
+    image: "images/jalapenos.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Pico de Gallo",
+    price: 400,
+    description: "Fresh tomatoes, onions, cilantro and lime.",
+    image: "images/picoDeGallo.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Cheese",
+    price: 500,
+    description: "Melted cheese topping that adds a rich and creamy flavor.",
+    image: "images/cheese.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Sour Cream",
+    price: 300,
+    description: "Smooth and creamy sour cream served as a delicious topping.",
+    image: "images/sourCream.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Grilled Chicken",
+    price: 800,
+    description: "Tender grilled chicken seasoned with herbs and spices.",
+    image: "images/grilledGhicken.png",
+    category: ["toppings"]
+},
+
+{
+    name: "Ground Beef",
+    price: 700,
+    description: "Seasoned ground beef cooked with aromatic herbs and spices.",
+    image: "images/groundBeef.png",
+    category: ["toppings"]
+},
 ];
